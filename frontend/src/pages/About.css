@@ -1,0 +1,230 @@
+.about-page {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 100px 40px 80px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(6, 182, 212, 0.05) 0%, rgba(10, 14, 26, 0) 100%);
+  border-bottom: 1px solid rgba(6, 182, 212, 0.1);
+}
+
+.about-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.about-lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #94a3b8;
+  margin: 0 auto;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  padding: 100px 40px;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+}
+
+.mv-card {
+  padding: 50px;
+  text-align: center;
+}
+
+.mv-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6, 182, 212, 0.1);
+  border-radius: 20px;
+  color: #06b6d4;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.mv-card h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mv-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #94a3b8;
+}
+
+/* Company Story */
+.company-story {
+  padding: 100px 40px;
+  background: rgba(15, 23, 42, 0.3);
+  border-top: 1px solid rgba(6, 182, 212, 0.1);
+  border-bottom: 1px solid rgba(6, 182, 212, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.story-text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.story-text p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+/* Values Section */
+.values-section {
+  padding: 100px 40px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  padding: 40px;
+  text-align: center;
+}
+
+.value-icon {
+  color: #06b6d4;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.value-card h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Why Choose Us */
+.why-choose {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
+  border-top: 1px solid rgba(6, 182, 212, 0.1);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-item {
+  padding: 40px;
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.why-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(6, 182, 212, 0.5);
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.why-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.why-item h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.why-item p {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 80px 20px 60px;
+  }
+
+  .mission-vision,
+  .company-story,
+  .values-section,
+  .why-choose {
+    padding: 60px 20px;
+  }
+
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .mv-card {
+    padding: 30px;
+  }
+}
